@@ -6,9 +6,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  # <- This allows requests from your Flutter web app
 
-
-app = Flask(__name__)
-
 # Load saved model & scaler
 model = joblib.load("heart_model.pkl")
 scaler = joblib.load("scaler.pkl")
